@@ -1,0 +1,65 @@
+name: Rule proposal
+description: Propose a Chinese writing pattern, boundary correction, or false-positive fix.
+title: "[Rule]: "
+labels: ["rule-proposal", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rules describe editorial harm, not AI authorship. Use only synthetic, original, public-domain, or compatibly licensed examples.
+  - type: input
+    id: existing
+    attributes:
+      label: Existing rule, if any
+      placeholder: ZH01 or New rule
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Editorial problem
+      description: How does the pattern reduce clarity, credibility, specificity, or natural rhythm?
+    validations:
+      required: true
+  - type: textarea
+    id: positives
+    attributes:
+      label: Positive examples
+      description: Provide at least two minimal examples that should be flagged.
+    validations:
+      required: true
+  - type: textarea
+    id: counterexample
+    attributes:
+      label: Legitimate-use counterexample
+      description: Show a similar expression that should not be flagged and explain why.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnosis
+    attributes:
+      label: Suggested diagnosis and rewrite principle
+    validations:
+      required: true
+  - type: dropdown
+    id: profiles
+    attributes:
+      label: Most relevant profile
+      multiple: true
+      options:
+        - casual
+        - professional
+        - academic
+        - social
+        - marketing
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy
+      options:
+        - label: I have the right to publish every submitted example and have described any required attribution.
+          required: true
+        - label: The examples contain no personal, confidential, or regulated data.
+          required: true

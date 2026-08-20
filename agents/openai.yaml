@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanize ZH"
+  short_description: "可解释的中文 AI 文风诊断与分级改写工具"
+  default_prompt: "Use $humanize-zh to audit this Chinese text and lightly rewrite only the passages that need it."

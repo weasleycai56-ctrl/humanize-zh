@@ -1,0 +1,24 @@
+[
+  {
+    "id": "casual-strong-01",
+    "style": "casual",
+    "mode": "strong",
+    "input": "随着数字生活的不断发展，手机不仅是沟通工具，更是连接彼此情感的重要桥梁。让我们一起拥抱科技带来的美好生活。",
+    "expected_rules": ["ZH01", "ZH02", "ZH11"],
+    "preserve": ["手机", "沟通"],
+    "avoid_in_rewrite": ["不断发展", "重要桥梁", "让我们一起"],
+    "expected_after": "现在很多人主要靠手机和朋友、家人沟通。工具变了，愿不愿意主动聊几句、认真回应对方，仍然更影响一段关系。",
+    "notes": "不虚构个人经历，也不替读者表达情绪。"
+  },
+  {
+    "id": "casual-light-02",
+    "style": "casual",
+    "mode": "audit",
+    "input": "真正的友情从来不是天天见面，而是无论多久没联系，再见时依然熟悉。",
+    "expected_rules": ["ZH12"],
+    "preserve": ["友情", "联系", "熟悉"],
+    "avoid_in_rewrite": ["真正的", "从来不是"],
+    "expected_after": "友情不一定靠天天见面维持。有些朋友很久没联系，再见时还是熟悉。",
+    "notes": "audit 模式只应给诊断；expected_after 用于维护者人工比较，不应由 Skill 自动输出。"
+  }
+]

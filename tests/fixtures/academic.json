@@ -1,0 +1,24 @@
+[
+  {
+    "id": "academic-light-01",
+    "style": "academic",
+    "mode": "light",
+    "input": "有研究表明，该方法能够显著改善患者结局，具有重大意义。综上所述，该方法值得全面推广。",
+    "expected_rules": ["ZH02", "ZH07", "ZH10"],
+    "preserve": ["该方法", "患者结局"],
+    "avoid_in_rewrite": ["有研究表明", "重大意义", "全面推广"],
+    "expected_after": "现有研究提示，该方法可能改善患者结局；但在建议推广前，仍需说明证据来源、效应大小、研究局限和适用人群。",
+    "notes": "必须保留证据不确定性，不能把相关或初步结果强化为因果。"
+  },
+  {
+    "id": "academic-light-02",
+    "style": "academic",
+    "mode": "light",
+    "input": "该干预可能在一定程度上或许有助于改善依从性，但结论仍需进一步验证。",
+    "expected_rules": ["ZH14"],
+    "preserve": ["干预", "依从性", "仍需进一步验证"],
+    "avoid_in_rewrite": ["可能在一定程度上或许"],
+    "expected_after": "该干预可能改善依从性，但这一结论仍需进一步验证。",
+    "notes": "只删除重复限定，不提高结论强度。"
+  }
+]

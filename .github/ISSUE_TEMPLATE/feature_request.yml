@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement that fits the project's writing-style scope.
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: Describe the editing task and who benefits from it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+    validations:
+      required: false
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Scope check
+      options:
+        - label: This request does not require AI-authorship detection or detector-bypass claims.
+          required: true
+        - label: I have not included private or confidential text.
+          required: true

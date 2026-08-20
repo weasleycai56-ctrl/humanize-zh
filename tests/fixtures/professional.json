@@ -1,0 +1,24 @@
+[
+  {
+    "id": "professional-light-01",
+    "style": "professional",
+    "mode": "light",
+    "input": "首先，我们完成了需求梳理。其次，我们推进了接口联调。此外，我们优化了测试流程。最后，我们将持续做好后续工作。",
+    "expected_rules": ["ZH05"],
+    "preserve": ["需求梳理", "接口联调", "测试流程"],
+    "avoid_in_rewrite": ["首先", "其次", "此外", "做好后续工作"],
+    "expected_after": "本周已完成需求梳理和接口联调，并调整了测试流程。后续事项确认后再更新进度。",
+    "notes": "原文没有具体下一步，因此只降低空泛程度，不补造任务、数字或日期。"
+  },
+  {
+    "id": "professional-strong-02",
+    "style": "professional",
+    "mode": "strong",
+    "input": "本项目将进行流程优化，实现协作效率提升，推动相关方案尽快落地。",
+    "expected_rules": ["ZH08"],
+    "preserve": ["流程", "协作", "方案"],
+    "avoid_in_rewrite": ["进行流程优化", "实现协作效率提升", "推动相关方案尽快落地"],
+    "expected_after": "本项目将调整流程，以提高协作效率并加快方案实施。具体调整项和时间表待确认。",
+    "notes": "原文缺少具体措施，因此保守改写并明确需要补充的信息。"
+  }
+]

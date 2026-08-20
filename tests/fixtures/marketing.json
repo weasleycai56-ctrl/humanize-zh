@@ -1,0 +1,24 @@
+[
+  {
+    "id": "marketing-strong-01",
+    "style": "marketing",
+    "mode": "strong",
+    "input": "新品以前所未有的创新重新定义团队协作，为企业数字化转型注入新动能。",
+    "expected_rules": ["ZH02", "ZH03"],
+    "preserve": ["新品", "团队协作", "企业"],
+    "avoid_in_rewrite": ["前所未有", "重新定义", "注入新动能"],
+    "expected_after": "这款新品面向企业团队协作。具体功能、适用流程和效果需要根据产品资料说明。",
+    "notes": "原文没有功能证据，因此降低主张并指出需要补充的产品资料。"
+  },
+  {
+    "id": "marketing-light-02",
+    "style": "marketing",
+    "mode": "light",
+    "input": "我们将以全方位、多维度、深层次的服务体系，帮助客户迈出业务增长的关键一步。",
+    "expected_rules": ["ZH02", "ZH04"],
+    "preserve": ["服务", "客户", "业务增长"],
+    "avoid_in_rewrite": ["全方位", "多维度", "深层次", "关键一步"],
+    "expected_after": "我们将说明服务范围和交付方式，帮助客户找到影响业务增长的具体环节。",
+    "notes": "不编造具体服务项目；发布前仍需补充真实范围和交付方式。"
+  }
+]
