@@ -2,7 +2,7 @@
 
 这份清单用于准备材料，不代表满足条件或保证获批。项目状态、计划规则和申请入口可能变化，正式申请前应以 OpenAI 官方最新页面为准。
 
-当前状态（2026-08-21）：仓库已创建并保持 **Private**；公开决定、正式标签和 GitHub Release 均未执行。
+当前状态（2026-08-21）：仓库已经维护者确认并设为 **Public**；`v0.1.0` 正式标签和 GitHub Release 正在准备中。
 
 ## 1. 公开前仓库质量
 
@@ -12,14 +12,14 @@
 - [x] `python3 -m unittest discover -s tests -v` 通过（9 项，2026-08-21）。
 - [x] `python3 scripts/public_repo_audit.py` 通过（2026-08-21）。
 - [x] Codex skill validator 通过（2026-08-21）。
-- [x] `VERSION`、Changelog 和 release notes 一致；未来 Git tag 尚未创建。
+- [x] `VERSION`、Changelog 和 release notes 一致；正式 Git tag 将在最终 CI 通过后创建。
 - [x] README 中的安装方式已在干净目录实测。
 - [x] GitHub 链接已指向 `weasleycai56-ctrl/humanize-zh`。
 - [ ] 已启用 Private Vulnerability Reporting 或提供明确的私密安全渠道。
 
 ## 2. 建立可验证的 OSS 记录
 
-- [ ] 由维护者最终确认后再将现有 Private 仓库设为 Public；本项目不会自动执行。
+- [x] 维护者已完成最终审核，并确认将仓库设为 Public（2026-08-21）。
 - [ ] 发布 `v0.1.0`，附真实测试结果和已知限制。
 - [ ] 建立清楚的 issue 标签，例如 `bug`、`rule-proposal`、`false-positive`、`good-first-issue`。
 - [ ] 对用户反馈和 PR 保持可见、礼貌、可复现的维护记录。

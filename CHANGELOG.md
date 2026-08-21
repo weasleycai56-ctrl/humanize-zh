@@ -10,7 +10,7 @@ The project uses semantic versioning. Until `1.0.0`, minor releases may refine t
 
 - Collect maintainer-reviewed false positives and Traditional Chinese fixtures.
 
-## [0.1.0] - Unreleased
+## [0.1.0] - 2026-08-21
 
 ### Added
 
