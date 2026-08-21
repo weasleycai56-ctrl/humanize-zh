@@ -2,22 +2,24 @@
 
 这份清单用于准备材料，不代表满足条件或保证获批。项目状态、计划规则和申请入口可能变化，正式申请前应以 OpenAI 官方最新页面为准。
 
+当前状态（2026-08-21）：仓库已创建并保持 **Private**；公开决定、正式标签和 GitHub Release 均未执行。
+
 ## 1. 公开前仓库质量
 
-- [ ] 维护者已逐文件审核，无私人路径、密钥、联系方式或内部资料。
-- [ ] 所有文本和测试语料均为原创、获授权或许可证兼容，并记录来源。
-- [ ] `LICENSE`、`README.md`、`CONTRIBUTING.md`、`SECURITY.md`、`CODE_OF_CONDUCT.md` 齐全。
-- [ ] `python3 -m unittest discover -s tests -v` 通过。
-- [ ] `python3 scripts/public_repo_audit.py` 通过。
-- [ ] Codex skill validator 通过。
-- [ ] `VERSION`、Changelog、release notes 和未来 Git tag 一致。
-- [ ] README 中所有安装命令已在干净目录实测。
+- [x] 维护者已逐文件审核，无私人路径、密钥、联系方式或内部资料。
+- [x] 所有文本和测试语料均为原创、获授权或许可证兼容，并记录来源。
+- [x] `LICENSE`、`README.md`、`CONTRIBUTING.md`、`SECURITY.md`、`CODE_OF_CONDUCT.md` 齐全。
+- [x] `python3 -m unittest discover -s tests -v` 通过（9 项，2026-08-21）。
+- [x] `python3 scripts/public_repo_audit.py` 通过（2026-08-21）。
+- [x] Codex skill validator 通过（2026-08-21）。
+- [x] `VERSION`、Changelog 和 release notes 一致；未来 Git tag 尚未创建。
+- [x] README 中的安装方式已在干净目录实测。
 - [x] GitHub 链接已指向 `weasleycai56-ctrl/humanize-zh`。
 - [ ] 已启用 Private Vulnerability Reporting 或提供明确的私密安全渠道。
 
 ## 2. 建立可验证的 OSS 记录
 
-- [ ] 先由维护者决定何时创建 GitHub 仓库并设为 Public；本项目不会自动执行。
+- [ ] 由维护者最终确认后再将现有 Private 仓库设为 Public；本项目不会自动执行。
 - [ ] 发布 `v0.1.0`，附真实测试结果和已知限制。
 - [ ] 建立清楚的 issue 标签，例如 `bug`、`rule-proposal`、`false-positive`、`good-first-issue`。
 - [ ] 对用户反馈和 PR 保持可见、礼貌、可复现的维护记录。

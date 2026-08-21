@@ -39,10 +39,18 @@ It does **not** detect AI authorship and does not promise to bypass AI detectors
 
 ### Codex
 
-克隆或下载本仓库后，把整个目录复制到个人 skills 目录：
+克隆或下载本仓库后，把整个目录复制到个人 skills 目录。
+
+macOS / Linux：
 
 ```bash
 cp -R humanize-zh ~/.codex/skills/humanize-zh
+```
+
+Windows PowerShell：
+
+```powershell
+Copy-Item -Recurse .\humanize-zh "$HOME\.codex\skills\humanize-zh"
 ```
 
 重新打开 Codex 后，可以显式调用 `$humanize-zh`；其描述也支持在合适的中文编辑任务中自动发现。
@@ -117,7 +125,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/public_repo_audit.py
 ```
 
-测试不会要求生成文本逐字等于标准答案，而会检查场景覆盖、规则稳定性、事实保留项和禁止出现的套话。详见 [tests/README.md](tests/README.md)。
+每次推送到 `main` 或提交 pull request 时，GitHub Actions 也会运行同一套测试和公开安全审计。测试不会要求生成文本逐字等于标准答案，而会检查场景覆盖、规则稳定性、事实保留项、版本契约和禁止出现的套话。详见 [tests/README.md](tests/README.md)。
 
 ## 限制
 

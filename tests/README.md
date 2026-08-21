@@ -2,7 +2,7 @@
 
 The fixtures are behavioral examples for maintainers and agents. Each case records the source, intended profile and mode, rules that should be noticed, facts or terms that must survive, phrases that should not survive, and one acceptable revision.
 
-The `expected_after` field is not a golden string. Good rewrites can differ. Tests enforce stable rule coverage and preservation invariants rather than exact prose.
+The `expected_after` field is not a golden string. Good rewrites can differ. Tests enforce stable rule coverage and preservation invariants rather than exact prose. Repository-contract tests also check required governance files, Skill frontmatter, version alignment, workflow presence, and unresolved owner placeholders.
 
 Some examples deliberately show the danger of adding specificity that was not present in the source. Their `notes` explain that those details must be verified before use. This makes the fixtures useful for reviewing an agent's judgment, not for copying answers blindly.
 

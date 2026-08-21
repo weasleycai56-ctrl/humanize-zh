@@ -10,7 +10,7 @@ The project uses semantic versioning. Until `1.0.0`, minor releases may refine t
 
 - Collect maintainer-reviewed false positives and Traditional Chinese fixtures.
 
-## [0.1.0] - 2026-08-20
+## [0.1.0] - Unreleased
 
 ### Added
 
@@ -20,6 +20,7 @@ The project uses semantic versioning. Until `1.0.0`, minor releases may refine t
 - Explainable output contract: issue type, excerpt, reason, and suggestion.
 - Zero-dependency deterministic audit CLI with Markdown and JSON output.
 - Ten multi-context before/after fixtures and standard-library tests.
+- GitHub Actions CI and repository-contract tests for every push and pull request.
 - Public-repository safety audit for likely secrets, personal paths, email addresses, large files, and binary assets.
 - Installation, contribution, security, community, release, and project-positioning documentation.
 
